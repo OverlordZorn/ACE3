@@ -36,7 +36,7 @@ UNIFORM_SLEEVES(CUP_U_O_RUS_VSR98_VDV_rolled_up,CUP_U_O_RUS_VSR98_VDV_rolled_up_
 
 // This could maybe be a MACRO
 class CUP_U_O_RUS_Soldier_VKPO_Desert_1: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Desert_2;
         class CUP_U_O_RUS_Soldier_VKPO_Desert_3;
         class CUP_U_O_RUS_Soldier_VKPO_Desert_4;
@@ -45,28 +45,28 @@ class CUP_U_O_RUS_Soldier_VKPO_Desert_1: EGVAR(wardrobe,base) {
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Desert_2: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Desert_1;
         class CUP_U_O_RUS_Soldier_VKPO_Rolled_Desert_2;
     };
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Desert_3: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Desert_1;
         class CUP_U_O_RUS_Soldier_VKPO_Rolled_Desert_3;
     };
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Desert_4: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Desert_1;
         class CUP_U_O_RUS_Soldier_VKPO_Rolled_Desert_4;
     };
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Rolled_Desert_1: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Desert_1;
         class CUP_U_O_RUS_Soldier_VKPO_Rolled_Desert_2;
         class CUP_U_O_RUS_Soldier_VKPO_Rolled_Desert_3;
@@ -75,21 +75,21 @@ class CUP_U_O_RUS_Soldier_VKPO_Rolled_Desert_1: EGVAR(wardrobe,base) {
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Rolled_Desert_2: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Desert_1;
         class CUP_U_O_RUS_Soldier_VKPO_Desert_2;
     };
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Rolled_Desert_3: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Desert_1;
         class CUP_U_O_RUS_Soldier_VKPO_Desert_3;
     };
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Rolled_Desert_4: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Desert_1;
         class CUP_U_O_RUS_Soldier_VKPO_Desert_4;
     };
@@ -97,7 +97,7 @@ class CUP_U_O_RUS_Soldier_VKPO_Rolled_Desert_4: EGVAR(wardrobe,base) {
 };
 
 class CUP_U_O_RUS_Soldier_VKPO_Summer_1: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Summer_2;
         class CUP_U_O_RUS_Soldier_VKPO_Summer_3;
         class CUP_U_O_RUS_Soldier_VKPO_Summer_4;
@@ -106,28 +106,28 @@ class CUP_U_O_RUS_Soldier_VKPO_Summer_1: EGVAR(wardrobe,base) {
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Summer_2: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Summer_1;
         class CUP_U_O_RUS_Soldier_VKPO_Rolled_Summer_2;
     };
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Summer_3: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Summer_1;
         class CUP_U_O_RUS_Soldier_VKPO_Rolled_Summer_3;
     };
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Summer_4: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Summer_1;
         class CUP_U_O_RUS_Soldier_VKPO_Rolled_Summer_4;
     };
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Rolled_Summer_1: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Summer_1;
         class CUP_U_O_RUS_Soldier_VKPO_Rolled_Summer_2;
         class CUP_U_O_RUS_Soldier_VKPO_Rolled_Summer_3;
@@ -136,21 +136,21 @@ class CUP_U_O_RUS_Soldier_VKPO_Rolled_Summer_1: EGVAR(wardrobe,base) {
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Rolled_Summer_2: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Summer_1;
         class CUP_U_O_RUS_Soldier_VKPO_Summer_2;
     };
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Rolled_Summer_3: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Summer_1;
         class CUP_U_O_RUS_Soldier_VKPO_Summer_3;
     };
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Rolled_Summer_4: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Summer_1;
         class CUP_U_O_RUS_Soldier_VKPO_Summer_4;
     };
@@ -158,7 +158,7 @@ class CUP_U_O_RUS_Soldier_VKPO_Rolled_Summer_4: EGVAR(wardrobe,base) {
 };
 
 class CUP_U_O_RUS_Soldier_VKPO_Winter_1: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Winter_2;
         class CUP_U_O_RUS_Soldier_VKPO_Winter_3;
         class CUP_U_O_RUS_Soldier_VKPO_Winter_4;
@@ -167,28 +167,28 @@ class CUP_U_O_RUS_Soldier_VKPO_Winter_1: EGVAR(wardrobe,base) {
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Winter_2: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Winter_1;
         class CUP_U_O_RUS_Soldier_VKPO_Rolled_Winter_2;
     };
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Winter_3: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Winter_1;
         class CUP_U_O_RUS_Soldier_VKPO_Rolled_Winter_3;
     };
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Winter_4: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Winter_1;
         class CUP_U_O_RUS_Soldier_VKPO_Rolled_Winter_4;
     };
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Rolled_Winter_1: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Winter_1;
         class CUP_U_O_RUS_Soldier_VKPO_Rolled_Winter_2;
         class CUP_U_O_RUS_Soldier_VKPO_Rolled_Winter_3;
@@ -197,21 +197,21 @@ class CUP_U_O_RUS_Soldier_VKPO_Rolled_Winter_1: EGVAR(wardrobe,base) {
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Rolled_Winter_2: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Winter_1;
         class CUP_U_O_RUS_Soldier_VKPO_Winter_2;
     };
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Rolled_Winter_3: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Winter_1;
         class CUP_U_O_RUS_Soldier_VKPO_Winter_3;
     };
     components[] = {};
 };
 class CUP_U_O_RUS_Soldier_VKPO_Rolled_Winter_4: EGVAR(wardrobe,base) {
-    class modifiyableTo {
+    class modifiableTo {
         class CUP_U_O_RUS_Soldier_VKPO_Winter_1;
         class CUP_U_O_RUS_Soldier_VKPO_Winter_4;
     };
