@@ -20,7 +20,7 @@ class CfgPatches {
 };
 
 // For Consistency: Adjust Mass/containerSize
-#include "CfgWeapons.hpp"
+// #include "CfgWeapons.hpp"
 
 // ACE Wardrobe
 #include "CfgWardrobe.hpp"

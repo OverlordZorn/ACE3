@@ -1,3 +1,22 @@
+// Macros
+#define CUP_TSHIRT(tshirtBase,tshirtGloves,tshirtKnee)\
+class tshirtBase: EGVAR(wardrobe,base) {\
+    class modifiableTo {\
+        class tshirtGloves;\
+        class tshirtKnee;\
+    };\
+};\
+class tshirtGloves: EGVAR(wardrobe,base) {\
+    class modifiableTo {\
+        class tshirtBase;\
+    };\
+};\
+class tshirtKnee: EGVAR(wardrobe,base) {\
+    class modifiableTo {\
+        class tshirtBase;\
+    };\
+}
+
 //Army of the Czech Republic
 UNIFORM_SLEEVES(CUP_U_B_CZ_DST_NoKneepads,CUP_U_B_CZ_DST_Kneepads_Sleeve);
 UNIFORM_SLEEVES(CUP_U_B_CZ_DST_Kneepads,CUP_U_B_CZ_DST_Kneepads_Gloves);
@@ -217,3 +236,8 @@ class CUP_U_O_RUS_Soldier_VKPO_Rolled_Winter_4: EGVAR(wardrobe,base) {
     };
     components[] = {};
 };
+
+// British Armed Forces
+CUP_TSHIRT(CUP_U_B_BAF_MTP_UBACSTSHIRT,CUP_U_B_BAF_MTP_UBACSTSHIRT_Gloves,CUP_U_B_BAF_MTP_UBACSTSHIRTKNEE);
+CUP_TSHIRT(CUP_U_B_BAF_DPM_UBACSTSHIRT,CUP_U_B_BAF_DPM_UBACSTSHIRT_Gloves,CUP_U_B_BAF_DPM_UBACSTSHIRTKNEE);
+CUP_TSHIRT(CUP_U_B_BAF_DDPM_UBACSTSHIRT,CUP_U_B_BAF_DDPM_UBACSTSHIRT_Gloves,CUP_U_B_BAF_DDPM_UBACSTSHIRTKNEE);
