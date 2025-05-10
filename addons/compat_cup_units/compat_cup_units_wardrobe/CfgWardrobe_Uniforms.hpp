@@ -1,35 +1,35 @@
 // Macros
 #define CUP_UNIFORM_TSHIRT(tshirtBase,tshirtGloves,tshirtKnee)\
-class tshirtBase: EGVAR(wardrobe,base) {\
+class tshirtBase : EGVAR(wardrobe,base) {\
     class modifiableTo {\
         class tshirtGloves;\
         class tshirtKnee;\
     };\
 };\
-class tshirtGloves: EGVAR(wardrobe,base) {\
+class tshirtGloves : EGVAR(wardrobe,base) {\
     class modifiableTo {\
         class tshirtBase;\
     };\
 };\
-class tshirtKnee: EGVAR(wardrobe,base) {\
+class tshirtKnee : EGVAR(wardrobe,base) {\
     class modifiableTo {\
         class tshirtBase;\
     };\
 }
 
 #define CUP_UNIFORM_3(uniformBase,uniformVariant1,uniformVariant2)\
-class uniformBase: EGVAR(wardrobe,base) {\
+class uniformBase : EGVAR(wardrobe,base) {\
     class modifiableTo {\
         class uniformVariant1;\
         class uniformVariant2;\
     };\
 };\
-class uniformVariant1: EGVAR(wardrobe,base) {\
+class uniformVariant1 : EGVAR(wardrobe,base) {\
     class modifiableTo {\
         class uniformBase;\
     };\
 };\
-class uniformVariant2: EGVAR(wardrobe,base) {\
+class uniformVariant2 : EGVAR(wardrobe,base) {\
     class modifiableTo {\
         class uniformBase;\
     };\
@@ -39,7 +39,7 @@ class uniformVariant2: EGVAR(wardrobe,base) {\
 UNIFORM_SLEEVES(CUP_U_B_CZ_DST_NoKneepads,CUP_U_B_CZ_DST_Kneepads_Sleeve);
 UNIFORM_SLEEVES(CUP_U_B_CZ_DST_Kneepads,CUP_U_B_CZ_DST_Kneepads_Gloves);
 UNIFORM_SLEEVES(CUP_U_B_CZ_WDL_NoKneepads,CUP_U_B_CZ_WDL_Kneepads_Gloves);
-UNIFORM_SLEEVES(CUP_U_B_CZ_WDL_Kneepads,CUP_U_B_CZ_WDL_Kneepads_Gloves);
+//UNIFORM_SLEEVES(CUP_U_B_CZ_WDL_Kneepads,CUP_U_B_CZ_WDL_Kneepads_Gloves); // ToDo check Class Names
 
 //Armed Forces of the Russian Federation
 UNIFORM_SLEEVES(CUP_U_O_RUS_BeigeDigital_MSV,CUP_U_O_RUS_BeigeDigital_MSV_rolled_up);
@@ -52,10 +52,11 @@ UNIFORM_SLEEVES(CUP_U_O_RUS_EMR_1_VDV,CUP_U_O_RUS_EMR_2_VDV);
 UNIFORM_SLEEVES(CUP_U_O_RUS_EMR_VDV_gloves_pads,CUP_U_O_RUS_EMR_VDV_rolled_up_gloves_pads);
 UNIFORM_SLEEVES(CUP_U_O_RUS_KSOR_VDV,CUP_U_O_RUS_KSOR_VDV_rolled_up);
 UNIFORM_SLEEVES(CUP_U_O_RUS_KSOR_VDV_gloves_pads,CUP_U_O_RUS_KSOR_VDV_rolled_up_gloves_pads);
-UNIFORM_SLEEVES(CUP_U_O_RUS_VSR93_VDV,CUP_U_O_RUS_VSR93_VDV_rolled_up);
-UNIFORM_SLEEVES(CUP_U_O_RUS_VSR93_VDV_rolled_up,CUP_U_O_RUS_VSR93_VDV_rolled_up_gloves2);
-UNIFORM_SLEEVES(CUP_U_O_RUS_VSR98_VDV,CUP_U_O_RUS_VSR98_VDV_rolled_up);
-UNIFORM_SLEEVES(CUP_U_O_RUS_VSR98_VDV_rolled_up,CUP_U_O_RUS_VSR98_VDV_rolled_up_gloves2);
+// ToDo Complex variant
+// UNIFORM_SLEEVES(CUP_U_O_RUS_VSR93_VDV,CUP_U_O_RUS_VSR93_VDV_rolled_up);
+// UNIFORM_SLEEVES(CUP_U_O_RUS_VSR93_VDV_rolled_up,CUP_U_O_RUS_VSR93_VDV_rolled_up_gloves2);
+// UNIFORM_SLEEVES(CUP_U_O_RUS_VSR98_VDV,CUP_U_O_RUS_VSR98_VDV_rolled_up);
+// UNIFORM_SLEEVES(CUP_U_O_RUS_VSR98_VDV_rolled_up,CUP_U_O_RUS_VSR98_VDV_rolled_up_gloves2);
 UNIFORM_SLEEVES(CUP_U_O_RUS_M88_MSV,CUP_U_O_RUS_M88_MSV_rolled_up);
 UNIFORM_SLEEVES(CUP_U_O_RUS_M88_VDV,CUP_U_O_RUS_M88_VDV_rolled_up);
 
@@ -306,7 +307,6 @@ UNIFORM_SLEEVES(CUP_U_CRYE_V1_Full,CUP_U_CRYE_V1_Roll);
 UNIFORM_SLEEVES(CUP_U_CRYE_V2_Full,CUP_U_CRYE_V2_Roll);
 UNIFORM_SLEEVES(CUP_U_CRYE_V3_Full,CUP_U_CRYE_V3_Roll);
 UNIFORM_SLEEVES(CUP_U_CRYE_RGR_Full,CUP_U_CRYE_RGR_Roll);
-UNIFORM_SLEEVES(CUP_U_CRYE_V2_Full,CUP_U_CRYE_V2_Roll);
 UNIFORM_SLEEVES(CUP_U_CRYE_RGR_US_Full,CUP_U_CRYE_RGR_US_Roll);
 UNIFORM_SLEEVES(CUP_U_CRYE_TAN_Full,CUP_U_CRYE_TAN_Roll);
 UNIFORM_SLEEVES(CUP_U_CRYE_TAN_US_Full,CUP_U_CRYE_TAN_US_Roll);  
@@ -319,7 +319,6 @@ UNIFORM_SLEEVES(CUP_U_B_GER_Crye,CUP_U_B_GER_Crye2);
 
 // Rebels
 BASE_PAIR(CUP_U_I_GUE_Anorak_01,CUP_U_I_GUE_Anorak_03);
-BASE_PAIR(CUP_U_I_GUE_Flecktarn2,CUP_U_I_GUE_Flecktarn3);
 BASE_PAIR(CUP_U_I_GUE_Flecktarn2,CUP_U_I_GUE_Flecktarn3);
 
 // PMC
