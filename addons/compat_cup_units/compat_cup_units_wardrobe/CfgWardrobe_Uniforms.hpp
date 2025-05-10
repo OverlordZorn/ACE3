@@ -35,19 +35,74 @@ class uniformVariant2 : EGVAR(wardrobe,base) {\
     };\
 }
 
+#define CUP_UNIFORM_4(uniformBase,uniformVariant1,uniformVariant2,uniformVariant3)\
+CUP_UNIFORM_3(uniformBase,uniformVariant1,uniformVariant2);\
+class uniformVariant3 : EGVAR(wardrobe,base) {\
+    class modifiableTo {\
+        class uniformBase;\
+    };\
+}
+
+#define CUP_UNIFORM_BAF(uniformBase,uniformGLoves,uniformKneepad,uniformGlovesKneepad,uniformRolled,uniformRolledGloves,uniformRolledKneepad)\
+class uniformBase: EGVAR(wardrobe,base) {\
+    class modifiableTo {\
+        class uniformGLoves;\
+        class uniformKneepad;\
+        class uniformRolled;\
+    };\
+};\
+class uniformGLoves: EGVAR(wardrobe,base) {\
+    class modifiableTo {\
+        class uniformGlovesKneepad;\
+        class uniformRolledGloves;\
+        class uniformBase;\
+    };\
+};\
+class uniformKneepad: EGVAR(wardrobe,base) {\
+    class modifiableTo {\
+        class uniformGlovesKneepad;\
+        class uniformRolledKneepad;\
+        class uniformBase;\
+    };\
+};\
+class uniformGlovesKneepad: EGVAR(wardrobe,base) {\
+    class modifiableTo {\
+        class uniformGLoves;\
+        class uniformKneepad;\
+    };\
+};\
+class uniformRolled: EGVAR(wardrobe,base) {\
+    class modifiableTo {\
+        class uniformBase;\
+        class uniformRolledGloves;\
+        class uniformRolledKneepad;\
+    };\
+};\
+class uniformRolledKneepad: EGVAR(wardrobe,base) {\
+    class modifiableTo {\
+        class uniformRolled;\
+        class uniformKneepad;\
+    };\
+};\
+class uniformRolledGloves: EGVAR(wardrobe,base) {\
+    class modifiableTo {\
+        class uniformRolled;\
+        class uniformGLoves;\
+    };\
+}
+
+#define CUP_UNIFORMS_USMC()
+
 //Army of the Czech Republic
 UNIFORM_SLEEVES(CUP_U_B_CZ_DST_NoKneepads,CUP_U_B_CZ_DST_Kneepads_Sleeve);
 UNIFORM_SLEEVES(CUP_U_B_CZ_DST_Kneepads,CUP_U_B_CZ_DST_Kneepads_Gloves);
 UNIFORM_SLEEVES(CUP_U_B_CZ_WDL_NoKneepads,CUP_U_B_CZ_WDL_Kneepads_Gloves);
-//UNIFORM_SLEEVES(CUP_U_B_CZ_WDL_Kneepads,CUP_U_B_CZ_WDL_Kneepads_Gloves); // ToDo check Class Names
 
 //Armed Forces of the Russian Federation
 UNIFORM_SLEEVES(CUP_U_O_RUS_BeigeDigital_MSV,CUP_U_O_RUS_BeigeDigital_MSV_rolled_up);
 UNIFORM_SLEEVES(CUP_U_O_RUS_BeigeDigital_MSV_gloves_pads,CUP_U_O_RUS_BeigeDigital_MSV_rolled_up_gloves_pads);
 UNIFORM_SLEEVES(CUP_U_O_RUS_EMR_1,CUP_U_O_RUS_EMR_2);
 UNIFORM_SLEEVES(CUP_U_O_RUS_Flora_1,CUP_U_O_RUS_Flora_2);
-UNIFORM_SLEEVES(CUP_U_O_RUS_VSR93_MSV,CUP_U_O_RUS_VSR93_MSV_rolled_up);
-UNIFORM_SLEEVES(CUP_U_O_RUS_VSR98_MSV,CUP_U_O_RUS_VSR98_MSV_rolled_up);
 UNIFORM_SLEEVES(CUP_U_O_RUS_EMR_1_VDV,CUP_U_O_RUS_EMR_2_VDV);
 UNIFORM_SLEEVES(CUP_U_O_RUS_EMR_VDV_gloves_pads,CUP_U_O_RUS_EMR_VDV_rolled_up_gloves_pads);
 UNIFORM_SLEEVES(CUP_U_O_RUS_KSOR_VDV,CUP_U_O_RUS_KSOR_VDV_rolled_up);
@@ -87,9 +142,11 @@ class CUP_U_O_RUS_Soldier_Masking_Suit_6Sh119_Winter_4: EGVAR(wardrobe,base) {
 
 //CUP_U_O_RUS_VSR93_MSV ->CUP_U_O_RUS_VSR93_MSV_rolled_up
 //CUP_U_O_RUS_VSR93_MSV -> CUP_U_O_RUS_VSR93_worn_gloves_MSV
+UNIFORM_SLEEVES(CUP_U_O_RUS_VSR93_MSV,CUP_U_O_RUS_VSR93_MSV_rolled_up);
 
 //CUP_U_O_RUS_VSR98_worn_MSV ->CUP_U_O_RUS_VSR98_worn_MSV_rolled_up
 //CUP_U_O_RUS_VSR98_worn_MSV -> CUP_U_O_RUS_VSR98_worn_gloves_MSV
+UNIFORM_SLEEVES(CUP_U_O_RUS_VSR98_MSV,CUP_U_O_RUS_VSR98_MSV_rolled_up);
 
 //CUP_U_O_RUS_Flora_1_VDV ->CUP_U_O_RUS_Flora_2_VDV
 //CUP_U_O_RUS_Flora_1_VDV -> CUP_U_O_RUS_Flora_3
@@ -294,6 +351,10 @@ CUP_UNIFORM_TSHIRT(CUP_U_B_BAF_MTP_UBACSTSHIRT,CUP_U_B_BAF_MTP_UBACSTSHIRT_Glove
 CUP_UNIFORM_TSHIRT(CUP_U_B_BAF_DPM_UBACSTSHIRT,CUP_U_B_BAF_DPM_UBACSTSHIRT_Gloves,CUP_U_B_BAF_DPM_UBACSTSHIRTKNEE);
 CUP_UNIFORM_TSHIRT(CUP_U_B_BAF_DDPM_UBACSTSHIRT,CUP_U_B_BAF_DDPM_UBACSTSHIRT_Gloves,CUP_U_B_BAF_DDPM_UBACSTSHIRTKNEE);
 
+CUP_UNIFORM_BAF(CUP_U_B_BAF_MTP_UBACSLONG,CUP_U_B_BAF_MTP_UBACSLONG_Gloves,CUP_U_B_BAF_MTP_UBACSLONGKNEE,CUP_U_B_BAF_MTP_UBACSLONGKNEE_Gloves,CUP_U_B_BAF_MTP_UBACSROLLED,CUP_U_B_BAF_MTP_UBACSROLLED_Gloves,CUP_U_B_BAF_MTP_UBACSROLLEDKNEE);
+CUP_UNIFORM_BAF(CUP_U_B_BAF_DPM_UBACSLONG,CUP_U_B_BAF_DPM_UBACSLONG_Gloves,CUP_U_B_BAF_DPM_UBACSLONGKNEE,CUP_U_B_BAF_DPM_UBACSLONGKNEE_Gloves,CUP_U_B_BAF_DPM_UBACSROLLED,CUP_U_B_BAF_DPM_UBACSROLLED_Gloves,CUP_U_B_BAF_DPM_UBACSROLLEDKNEE);
+CUP_UNIFORM_BAF(CUP_U_B_BAF_DDPM_UBACSLONG,CUP_U_B_BAF_DDPM_UBACSLONG_Gloves,CUP_U_B_BAF_DDPM_UBACSLONGKNEE,CUP_U_B_BAF_DDPM_UBACSLONGKNEE_Gloves,CUP_U_B_BAF_DDPM_UBACSROLLED,CUP_U_B_BAF_DDPM_UBACSROLLED_Gloves,CUP_U_B_BAF_DDPM_UBACSROLLEDKNEE);
+
 // Crye
 UNIFORM_SLEEVES(CUP_U_CRYE_ATACSAU_Full,CUP_U_CRYE_ATACSAU_Roll);
 UNIFORM_SLEEVES(CUP_U_CRYE_ATACSFG_Full,CUP_U_CRYE_ATACSFG_Roll);
@@ -337,3 +398,150 @@ BASE_PAIR(CUP_U_I_RACS_WDL_1,CUP_U_I_RACS_WDL_2);
 BASE_PAIR(CUP_U_B_USArmy_Base,CUP_U_B_USArmy_TwoKnee);
 
 // USMC
+class CUP_U_B_USMC_MCCUU: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_gloves;
+        class CUP_U_B_USMC_MCCUU_pads;
+        class CUP_U_B_USMC_MCCUU_roll;
+    };
+};
+class CUP_U_B_USMC_MCCUU_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_gloves;
+        class CUP_U_B_USMC_MCCUU_pads_gloves;
+        class CUP_U_B_USMC_MCCUU;
+    };
+};
+class CUP_U_B_USMC_MCCUU_pads_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_pads;
+        class CUP_U_B_USMC_MCCUU_pads_gloves;
+        class CUP_U_B_USMC_MCCUU;
+    };
+};
+class CUP_U_B_USMC_MCCUU_roll: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_2;
+        class CUP_U_B_USMC_MCCUU_roll_gloves;
+        class CUP_U_B_USMC_MCCUU_roll_pads;
+        class CUP_U_B_USMC_MCCUU;
+    };
+};
+class CUP_U_B_USMC_MCCUU_roll_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_2_gloves;
+        class CUP_U_B_USMC_MCCUU_gloves;
+        class CUP_U_B_USMC_MCCUU_roll_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_roll;
+    };
+};
+class CUP_U_B_USMC_MCCUU_roll_pads: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_2_pads;
+        class CUP_U_B_USMC_MCCUU_pads;
+        class CUP_U_B_USMC_MCCUU_roll_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_roll;
+    };
+};
+class CUP_U_B_USMC_MCCUU_roll_2: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_2_gloves;
+        class CUP_U_B_USMC_MCCUU_roll_2_pads;
+        class CUP_U_B_USMC_MCCUU_roll;
+    };
+};
+class CUP_U_B_USMC_MCCUU_roll_2_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_2;
+        class CUP_U_B_USMC_MCCUU_roll_2_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_roll_gloves;
+    };
+};
+class CUP_U_B_USMC_MCCUU_roll_2_pads: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_2;
+        class CUP_U_B_USMC_MCCUU_roll_2_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_roll_pads;
+    };
+};
+class CUP_U_B_USMC_MCCUU_roll_2_pads_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_2_pads;
+        class CUP_U_B_USMC_MCCUU_roll_2_gloves;
+        class CUP_U_B_USMC_MCCUU_roll_pads_gloves;
+    };
+};
+
+class CUP_U_B_USMC_MCCUU_des: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_gloves;
+        class CUP_U_B_USMC_MCCUU_des_pads;
+        class CUP_U_B_USMC_MCCUU_des_roll;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_gloves;
+        class CUP_U_B_USMC_MCCUU_des_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_des;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_pads_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_pads;
+        class CUP_U_B_USMC_MCCUU_des_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_des;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_roll: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_2;
+        class CUP_U_B_USMC_MCCUU_des_roll_gloves;
+        class CUP_U_B_USMC_MCCUU_des_roll_pads;
+        class CUP_U_B_USMC_MCCUU_des;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_roll_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_2_gloves;
+        class CUP_U_B_USMC_MCCUU_des_gloves;
+        class CUP_U_B_USMC_MCCUU_des_roll_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_des_roll;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_roll_pads: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_2_pads;
+        class CUP_U_B_USMC_MCCUU_des_pads;
+        class CUP_U_B_USMC_MCCUU_des_roll_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_des_roll;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_roll_2: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_2_gloves;
+        class CUP_U_B_USMC_MCCUU_des_roll_2_pads;
+        class CUP_U_B_USMC_MCCUU_des_roll;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_roll_2_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_2;
+        class CUP_U_B_USMC_MCCUU_des_roll_2_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_des_roll_gloves;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_roll_2_pads: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_2;
+        class CUP_U_B_USMC_MCCUU_des_roll_2_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_des_roll_pads;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_roll_2_pads_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_2_pads;
+        class CUP_U_B_USMC_MCCUU_des_roll_2_gloves;
+        class CUP_U_B_USMC_MCCUU_des_roll_pads_gloves;
+    };
+};
