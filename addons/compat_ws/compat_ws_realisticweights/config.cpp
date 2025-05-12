@@ -7,12 +7,11 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "CUP_Weapons_LoadOrder",
-            "ace_csw"
+            "data_f_lxWS_Loadorder", "ace_realisticweights"
         };
         skipWhenMissingDependencies = 1;
         author = ECSTRING(common,ACETeam);
-        authors[] = {};
+        authors[] = {"ThomasAngel"};
         url = ECSTRING(main,URL);
         VERSION_CONFIG;
 
@@ -20,7 +19,4 @@ class CfgPatches {
     };
 };
 
-#include "CfgMagazines.hpp"
-#include "CfgMagazineGroups.hpp"
-#include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
