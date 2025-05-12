@@ -439,150 +439,150 @@ CUP_UNIFORM_GLOVES_KNEEPAD_ROLLED(CUP_U_B_USArmy_ACU_OEFCP,CUP_U_B_USArmy_ACU_Gl
 CUP_UNIFORM_GLOVES_KNEEPAD_ROLLED(CUP_U_B_USArmy_ACU_UCP,CUP_U_B_USArmy_ACU_Gloves_UCP,CUP_U_B_USArmy_ACU_Kneepad_UCP,CUP_U_B_USArmy_ACU_Kneepad_Gloves_UCP,CUP_U_B_USArmy_ACU_Rolled_UCP,CUP_U_B_USArmy_ACU_Rolled_Gloves_UCP,CUP_U_B_USArmy_ACU_Kneepad_Rolled_UCP,CUP_U_B_USArmy_ACU_Kneepad_Rolled_Gloves_UCP);
 
 // USMC
-// class CUP_U_B_USMC_MCCUU: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_gloves;
-//         class CUP_U_B_USMC_MCCUU_pads;
-//         class CUP_U_B_USMC_MCCUU_roll;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_gloves: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_roll_gloves;
-//         class CUP_U_B_USMC_MCCUU_pads_gloves;
-//         class CUP_U_B_USMC_MCCUU;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_pads_gloves: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_roll_pads;
-//         class CUP_U_B_USMC_MCCUU_pads_gloves;
-//         class CUP_U_B_USMC_MCCUU;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_roll: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_roll_2;
-//         class CUP_U_B_USMC_MCCUU_roll_gloves;
-//         class CUP_U_B_USMC_MCCUU_roll_pads;
-//         class CUP_U_B_USMC_MCCUU;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_roll_gloves: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_roll_2_gloves;
-//         class CUP_U_B_USMC_MCCUU_gloves;
-//         class CUP_U_B_USMC_MCCUU_roll_pads_gloves;
-//         class CUP_U_B_USMC_MCCUU_roll;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_roll_pads: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_roll_2_pads;
-//         class CUP_U_B_USMC_MCCUU_pads;
-//         class CUP_U_B_USMC_MCCUU_roll_pads_gloves;
-//         class CUP_U_B_USMC_MCCUU_roll;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_roll_2: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_roll_2_gloves;
-//         class CUP_U_B_USMC_MCCUU_roll_2_pads;
-//         class CUP_U_B_USMC_MCCUU_roll;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_roll_2_gloves: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_roll_2;
-//         class CUP_U_B_USMC_MCCUU_roll_2_pads_gloves;
-//         class CUP_U_B_USMC_MCCUU_roll_gloves;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_roll_2_pads: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_roll_2;
-//         class CUP_U_B_USMC_MCCUU_roll_2_pads_gloves;
-//         class CUP_U_B_USMC_MCCUU_roll_pads;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_roll_2_pads_gloves: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_roll_2_pads;
-//         class CUP_U_B_USMC_MCCUU_roll_2_gloves;
-//         class CUP_U_B_USMC_MCCUU_roll_pads_gloves;
-//     };
-// };
+class CUP_U_B_USMC_MCCUU: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_gloves;
+        class CUP_U_B_USMC_MCCUU_pads;
+        class CUP_U_B_USMC_MCCUU_roll;
+    };
+};
+class CUP_U_B_USMC_MCCUU_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_gloves;
+        class CUP_U_B_USMC_MCCUU_pads_gloves;
+        class CUP_U_B_USMC_MCCUU;
+    };
+};
+class CUP_U_B_USMC_MCCUU_pads_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_pads;
+        class CUP_U_B_USMC_MCCUU_pads_gloves;
+        class CUP_U_B_USMC_MCCUU;
+    };
+};
+class CUP_U_B_USMC_MCCUU_roll: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_2;
+        class CUP_U_B_USMC_MCCUU_roll_gloves;
+        class CUP_U_B_USMC_MCCUU_roll_pads;
+        class CUP_U_B_USMC_MCCUU;
+    };
+};
+class CUP_U_B_USMC_MCCUU_roll_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_2_gloves;
+        class CUP_U_B_USMC_MCCUU_gloves;
+        class CUP_U_B_USMC_MCCUU_roll_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_roll;
+    };
+};
+class CUP_U_B_USMC_MCCUU_roll_pads: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_2_pads;
+        class CUP_U_B_USMC_MCCUU_pads;
+        class CUP_U_B_USMC_MCCUU_roll_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_roll;
+    };
+};
+class CUP_U_B_USMC_MCCUU_roll_2: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_2_gloves;
+        class CUP_U_B_USMC_MCCUU_roll_2_pads;
+        class CUP_U_B_USMC_MCCUU_roll;
+    };
+};
+class CUP_U_B_USMC_MCCUU_roll_2_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_2;
+        class CUP_U_B_USMC_MCCUU_roll_2_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_roll_gloves;
+    };
+};
+class CUP_U_B_USMC_MCCUU_roll_2_pads: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_2;
+        class CUP_U_B_USMC_MCCUU_roll_2_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_roll_pads;
+    };
+};
+class CUP_U_B_USMC_MCCUU_roll_2_pads_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_roll_2_pads;
+        class CUP_U_B_USMC_MCCUU_roll_2_gloves;
+        class CUP_U_B_USMC_MCCUU_roll_pads_gloves;
+    };
+};
 
-// class CUP_U_B_USMC_MCCUU_des: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_des_gloves;
-//         class CUP_U_B_USMC_MCCUU_des_pads;
-//         class CUP_U_B_USMC_MCCUU_des_roll;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_des_gloves: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_des_roll_gloves;
-//         class CUP_U_B_USMC_MCCUU_des_pads_gloves;
-//         class CUP_U_B_USMC_MCCUU_des;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_des_pads_gloves: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_des_roll_pads;
-//         class CUP_U_B_USMC_MCCUU_des_pads_gloves;
-//         class CUP_U_B_USMC_MCCUU_des;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_des_roll: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_des_roll_2;
-//         class CUP_U_B_USMC_MCCUU_des_roll_gloves;
-//         class CUP_U_B_USMC_MCCUU_des_roll_pads;
-//         class CUP_U_B_USMC_MCCUU_des;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_des_roll_gloves: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_des_roll_2_gloves;
-//         class CUP_U_B_USMC_MCCUU_des_gloves;
-//         class CUP_U_B_USMC_MCCUU_des_roll_pads_gloves;
-//         class CUP_U_B_USMC_MCCUU_des_roll;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_des_roll_pads: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_des_roll_2_pads;
-//         class CUP_U_B_USMC_MCCUU_des_pads;
-//         class CUP_U_B_USMC_MCCUU_des_roll_pads_gloves;
-//         class CUP_U_B_USMC_MCCUU_des_roll;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_des_roll_2: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_des_roll_2_gloves;
-//         class CUP_U_B_USMC_MCCUU_des_roll_2_pads;
-//         class CUP_U_B_USMC_MCCUU_des_roll;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_des_roll_2_gloves: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_des_roll_2;
-//         class CUP_U_B_USMC_MCCUU_des_roll_2_pads_gloves;
-//         class CUP_U_B_USMC_MCCUU_des_roll_gloves;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_des_roll_2_pads: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_des_roll_2;
-//         class CUP_U_B_USMC_MCCUU_des_roll_2_pads_gloves;
-//         class CUP_U_B_USMC_MCCUU_des_roll_pads;
-//     };
-// };
-// class CUP_U_B_USMC_MCCUU_des_roll_2_pads_gloves: EGVAR(wardrobe,base) {
-//     class modifiableTo {
-//         class CUP_U_B_USMC_MCCUU_des_roll_2_pads;
-//         class CUP_U_B_USMC_MCCUU_des_roll_2_gloves;
-//         class CUP_U_B_USMC_MCCUU_des_roll_pads_gloves;
-//     };
-// };
+class CUP_U_B_USMC_MCCUU_des: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_gloves;
+        class CUP_U_B_USMC_MCCUU_des_pads;
+        class CUP_U_B_USMC_MCCUU_des_roll;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_gloves;
+        class CUP_U_B_USMC_MCCUU_des_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_des;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_pads_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_pads;
+        class CUP_U_B_USMC_MCCUU_des_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_des;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_roll: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_2;
+        class CUP_U_B_USMC_MCCUU_des_roll_gloves;
+        class CUP_U_B_USMC_MCCUU_des_roll_pads;
+        class CUP_U_B_USMC_MCCUU_des;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_roll_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_2_gloves;
+        class CUP_U_B_USMC_MCCUU_des_gloves;
+        class CUP_U_B_USMC_MCCUU_des_roll_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_des_roll;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_roll_pads: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_2_pads;
+        class CUP_U_B_USMC_MCCUU_des_pads;
+        class CUP_U_B_USMC_MCCUU_des_roll_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_des_roll;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_roll_2: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_2_gloves;
+        class CUP_U_B_USMC_MCCUU_des_roll_2_pads;
+        class CUP_U_B_USMC_MCCUU_des_roll;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_roll_2_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_2;
+        class CUP_U_B_USMC_MCCUU_des_roll_2_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_des_roll_gloves;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_roll_2_pads: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_2;
+        class CUP_U_B_USMC_MCCUU_des_roll_2_pads_gloves;
+        class CUP_U_B_USMC_MCCUU_des_roll_pads;
+    };
+};
+class CUP_U_B_USMC_MCCUU_des_roll_2_pads_gloves: EGVAR(wardrobe,base) {
+    class modifiableTo {
+        class CUP_U_B_USMC_MCCUU_des_roll_2_pads;
+        class CUP_U_B_USMC_MCCUU_des_roll_2_gloves;
+        class CUP_U_B_USMC_MCCUU_des_roll_pads_gloves;
+    };
+};
