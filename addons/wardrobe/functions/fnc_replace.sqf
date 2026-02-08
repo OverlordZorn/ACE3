@@ -27,7 +27,7 @@ private _classOrigin = configName _cfgOrigin;
 private _cfgWardobeTarget = configFile >> QUOTE(ADDON) >> _classTarget;
 
 // duration of the "animation"
-private _duration = getNumber (_cfgWardobeTarget >> "duration");
+private _duration = _actionParams call LINKFUNC(getDuration);
 
 // replace the main Item
 private _typeNumber = getNumber (_cfgOrigin >> "ItemInfo" >> "type");
@@ -38,6 +38,7 @@ if (_typeNumber isEqualTo 0) then {
     _typeNumber = switch (true) do {
         // CfgGlasses items do not have a ItemInfo subclass and therefore, will return 0
         case (isClass (configFile >> "CfgGlasses" >> _classOrigin)): { TYPE_GOGGLE };
+        case (getNumber (configFile >> "CfgVehicles" >> _classOrigin >> "isBackpack") isEqualTo 1): { TYPE_BACKPACK };
         default { 0 };
     };
 };
@@ -90,15 +91,15 @@ GVAR(inProgress) = true;
 
 // handle effects
 // animation/gestures
-[_player, getText (_cfgWardobeTarget >> "gesture")] call EFUNC(common,doGesture);
+[_player, _actionParams call LINKFUNC(getGesture)] call EFUNC(common,doGesture);
 
 // plays random sound at the beginning
-private _sound = [_cfgWardobeTarget >> "sound"] call CBA_fnc_getCfgDataRandom;
+private _sound = _actionParams call LINKFUNC(getSound);
 if (_sound isNotEqualTo "") then {
     [
         CBA_fnc_globalSay3D,
         [_player, _sound, nil, true, true],
-        (getNumber (_cfgWardobeTarget >> "sound_timing") max 0 min 1) * _duration
+        _duration * ( _actionParams call LINKFUNC(getSoundTiming) )
     ] call CBA_fnc_waitAndExecute;
 };
 
